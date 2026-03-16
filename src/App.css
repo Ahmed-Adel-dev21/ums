@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box ;
+
+}
+body{
+    overflow-y: hidden;
+    /* width: 100%; */
+}
+.mainColor_bg{
+    background-color: #FEAF00 !important;
+}
+.mainColor{
+    color: #FEAF00 !important;
+}
+.letter_space{
+    transition: all 0.3s;
+    width: fit-content;
+    border-bottom:2px dashed #FEAF00;
+    
+}
+.letter_space:hover{
+letter-spacing: 0.15em;
+}
+
+.cursor_pointer{
+    cursor: pointer;
+}
+
+
+.form-control:focus {
+    /* color: var(--bs-body-color); */
+    /* background-color: var(--bs-body-bg); */
+    border:0px solid rgba(254, 175, 0,0.4);
+    outline: 0;
+    box-shadow: 0 0 0 .15rem rgba(254, 175, 0,0.6);
+}
+/* login */
+.login-container{
+background: linear-gradient(71.17deg, #FEAF00 19.35%, #F8D442 90.12%);
+}
+.sideContainer{
+    background-color: rgba(242, 234, 225, 1) !important;
+}
+.css-dip3t8 {
+    background-color: transparent !important;
+}
+/* .css-1t8x7v1 >.ps-menu-button:hover{
+    background-color: #FEAF00 !important;
+} */
+ .css-1t8x7v1 > .ps-menu-button:hover,
+.active-link > .ps-menu-button {
+    background-color: #FEAF00 !important;
+    color: white !important; /* اختياري: تغيير لون النص عند التنشيط */
+}
+.ps-menu-button{
+    /* background-color: cadetblue !important; */
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px auto;
+    border-radius:8px;
+    padding: 0px !important;
+    transition: all 0.3s ease;
+    
+}
+
+.icon_hover:hover{
+    color: #FEAF00;
+}
+.profile_img{
+    border-radius: 50%;
+    width: 70%;
+    object-fit:cover;
+}
+.title{
+    width: fit-content;
+}
+
+/* image profile  */
+.profileImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50% );
+
+}
+
+/* latout  */
+/* Container الأساسي اللي شايل الـ Sidebar والـ Content */
+.app-container {
+  display: flex;
+  height: 100vh; /* طول الشاشة بالكامل */
+  overflow: hidden; /* عشان نمنع الـ Scroll في الصفحة كلها ونخليه في الـ Content بس */
+}
+
+.sidebar {
+  height: 100vh !important;
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* بيمنع الـ Sidebar إنه يصغر لو المحتوى اللي جنبه كبير */
+  flex-shrink: 0; 
+}
+
+.content {
+  flex-grow: 1; 
+  height: 100vh;
+  overflow-y: auto;
+  width: 100%; 
+  padding: 20px;
+  background-color: #f8f9fa; 
+}
+
+
+@media (max-width: 767px) {
+  .content {
+    width: 100%;
+    padding-top: 60px; 
+  }
+
+}
+canvas{
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+
+/* table */
+/* خلى الصفوف منفصلة عن بعضها */
+.custom_table {
+  border-collapse: separate;
+  border-spacing: 0 7px; /* المسافة الرأسية بين الصفوف (بديل الـ my-3) */
+}
+
+.custom_table tbody tr {
+  background-color: transparent ;
+  border-left: 2px solid #dee2e6;
+  border-top: 2px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+  border-right: 2px solid #dee2e6;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 20px 5px rgba(0,0,0,0.05); 
+}
+
+/* لعمل الزوايا المنحنية على الصف */
+.custom_table tbody tr td:first-child {
+  border-left: 2px solid #dee2e6;
+  border-top: 2px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.custom_table tbody tr td:last-child {
+  border-right: 2px solid #dee2e6;
+  border-top: 2px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* الحدود للعناصر اللي في النص */
+.custom_table tbody tr td {
+  border-top: 2px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+/* card_hove */
+.card_hove{
+    transition: all 0.4s;
+        border:1px solid transparent   ;
+
+}
+.card_hove:hover{
+    border:1px solid #FEAF00   ;
+transform: scale(1.05);
+}
