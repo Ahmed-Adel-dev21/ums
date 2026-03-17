@@ -55,9 +55,9 @@ let onSubmit=async(data:LoginFormInputs)=>{
     <div className="login-container">
       <div className="container">
         <div className="row mx-3 justify-content-center align-items-center vh-100">
-          <div className="col-lg-4 m-3 bg-white p-5 rounded ">
+          <div className="col-lg-5 m-3 bg-white p-4 rounded ">
             <div className=" text-center">
-              <h3 className='fw-bold title px-2  border border-5 border-warning border-top-0 border-end-0 border-bottom-0'>User Management System</h3>
+              <h3 className='fw-bold title mx-auto px-1  border border-5 border-warning border-top-0 border-end-0 border-bottom-0'>User Management System</h3>
               <h4 className='fw-semibold'>Sign In</h4>
               <small> Enter your credentials to access your account </small>
 

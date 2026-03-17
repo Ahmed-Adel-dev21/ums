@@ -103,17 +103,17 @@ export default function Home() {
   // end get data from api 
 
   const calculateAvgAge = (users: userData[]) => {
-    if (users.length === 0) return 0; // حماية في حال كانت المصفوفة فارغة
+    
 
     const totalAge = users.reduce((sum, user) => sum + user.age, 0);
     const average = totalAge / users.length;
 
-    return Math.round(average); // لتقريب الرقم (مثلاً 34 سنة)
+    return Math.round(average); 
   };
 
 
 
-  // الاستخدام داخل الـ Component:
+  
   const avgAge = calculateAvgAge(users);
 
   useEffect(() => {
