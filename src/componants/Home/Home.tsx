@@ -206,7 +206,7 @@ export default function Home() {
                     <th className='text-secondary bg-dark text-bold border rounded-2'>Images</th>
                     <th className='text-secondary bg-dark text-bold border rounded-2'>First Name</th>
                     <th className='text-secondary bg-dark text-bold border rounded-2'>Last Name</th>
-                    <th className='text-secondary bg-dark text-bold border rounded-2'>E-mail</th>
+                    <th className='text-secondary bg-dark text-bold border rounded-2'>Role</th>
                   </tr>
                 </thead>
                 <tbody className="   " >

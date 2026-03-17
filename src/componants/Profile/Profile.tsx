@@ -67,7 +67,7 @@ export default function Profile() {
             </div>
             <div className="row my-2">
               <div className="col-lg-6">
-                <label className='p-2   text-muted fw-semibold'> Email </label> //email
+                <label className='p-2   text-muted fw-semibold'> Email </label> 
                 <input readOnly type="email" className='form-control p-2 mb-2 bg-secondary bg-opacity-10' value={userData?.email}
             
                 />

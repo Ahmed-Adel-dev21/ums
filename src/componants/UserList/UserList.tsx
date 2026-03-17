@@ -135,10 +135,10 @@ export default function UserList() {
           </Modal.Header>
           <Modal.Body>Are you sure you wante to delet <span className='text-danger'>{usersData?.firstName} !!!!</span>  </Modal.Body>
           <Modal.Footer>
-            <Button className='' variant="outline-danger fw-semibold rounded-4 " onClick={deletUser}>
+            <Button className='' variant="danger fw-semibold rounded-3 " onClick={deletUser}>
               Delete
             </Button>
-            <Button variant="outline-secondary fw-semibold rounded-4 px-3" onClick={handleClose}>
+            <Button variant="outline-secondary fw-semibold rounded-3 px-3" onClick={handleClose}>
               Close
             </Button>
           </Modal.Footer>

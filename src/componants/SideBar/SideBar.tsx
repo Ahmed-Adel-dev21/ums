@@ -6,6 +6,7 @@ import { IoHomeOutline } from 'react-icons/io5'
 import { MdMenuOpen } from 'react-icons/md'
 import { Menu, MenuItem, Sidebar } from 'react-pro-sidebar'
 import { Link, useLocation } from 'react-router-dom'
+// import profile from 'D:/1Ahmed2026/React/UMS/src/assets/testimonial-2.jpg'
 import { useContext, useState } from 'react'
 import { TbLogout } from 'react-icons/tb'
 import { AuthContext } from '../Context/Context'
@@ -32,7 +33,7 @@ export default function SideBar() {
 
           <img className=' profile_img ' src={userData?.image} alt="Profile" />
           <h5 className=' my-1'>{userData?.firstName}</h5>
-          <h6 className='text-warning my-0 py-0'> {userData?.role} </h6>
+          <p className='text-warning my-0 py-0'>{userData?.role}</p>
 
 
         </div>

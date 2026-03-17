@@ -57,12 +57,12 @@ export default function AddUser() {
 
   return (
     <div>
-      <div className="">
+      <div className=" mb-5 pb-5">
         <div className="d-flex justify-content-between align-items-center my-3 mx-4  ">
           <h4 className="fw-semibold" >{isEdit ? 'Update User' : 'Add New User'}</h4>
         </div>
         <hr />
-        <div className=" d-flex justify-content-center">
+        <div className=" d-flex justify-content-center mt-5">
           <form onSubmit={handleSubmit(onSubmit)} className="  w-75  p-3 rounded-4 shadow-lg" >
             <div className="row">
               <div className="col-lg-6">
